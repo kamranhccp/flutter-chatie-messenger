@@ -13,10 +13,15 @@ Chatiee is a Flutter-based messaging app that allows users to connect and chat w
 - User-friendly interface: Intuitive design for easy navigation and usage.
 
 ## Screenshots
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/95042782-97fd-4430-9c51-cb97b0bd0f76" alt="Screenshot 1" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/90b2d8b2-2bb3-4905-a168-435b40d5cc31" alt="Screenshot 2" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4adfcde1-b893-4a65-8e8e-fad86e6691a7" alt="Screenshot 3" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/30c29f6b-ac81-40ea-9e77-00659d45d2ba" alt="Screenshot 4" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/95877ce2-3d70-4ae5-931d-572f5232e489" alt="Screenshot 5" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4a05351d-ffae-4362-b87f-1ac83358f2bb" alt="Screenshot 6" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4262059e-1510-45d4-b0c2-00e708abc638" alt="Screenshot 7" width="200"/>
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
-![Screenshot 3](screenshots/screenshot3.png)
+
 
 ## Getting Started
 
@@ -36,14 +41,10 @@ Contributions are welcome! If you find any issues or want to add new features, f
 
 This project is licensed under the [GNU License](LICENSE).
 
----
-
 Developed by [Kamran Mansoor(Kamranhccp)](https://github.com/kamranhccp)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
+## Help
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
