@@ -21,7 +21,30 @@ Chatiee is a Flutter-based messaging app that allows users to connect and chat w
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4a05351d-ffae-4362-b87f-1ac83358f2bb" alt="Screenshot 6" width="200"/>
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4262059e-1510-45d4-b0c2-00e708abc638" alt="Screenshot 7" width="200"/>
 
+## Chat Screen
 
+The chat screen offers a seamless messaging experience with the following features:
+
+- Real-time messaging: Exchange messages instantly.
+- Multimedia sharing: Send photos, videos, and files directly within the chat.
+- Typing indicators: See when the other person is typing.
+- Message status: Know when your message is delivered and read.
+
+## UI Repurposing
+
+With Chatiee, you can easily repurpose the user interface to match your branding and preferences:
+
+- Custom themes: Personalize the app's color scheme and UI elements.*(TODO)*
+- Dark mode: Toggle between light and dark modes for comfortable usage.*(TODO)*
+
+## Firebase Integration *(TODO)*
+
+Chatiee is powered by Firebase for seamless backend support:
+
+- Real-time database: Messages are synchronized across devices in real-time.
+- Authentication: Secure user authentication with Firebase Authentication.
+- Cloud Storage: Store and retrieve multimedia files using Firebase Cloud Storage.
+- Cloud Functions: Implement server-side logic with Firebase Cloud Functions.
 
 ## Getting Started
 
