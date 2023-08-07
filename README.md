@@ -19,6 +19,7 @@ Chatiee is a Flutter-based messaging app that allows users to connect and chat w
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/30c29f6b-ac81-40ea-9e77-00659d45d2ba" alt="Screenshot 4" width="200"/>
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/95877ce2-3d70-4ae5-931d-572f5232e489" alt="Screenshot 5" width="200"/>
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4a05351d-ffae-4362-b87f-1ac83358f2bb" alt="Screenshot 6" width="200"/>
+<img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/1021ebfc-1446-4a91-9488-8104f2c1b751" alt="Screenshot 7" width="200"/>
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/4262059e-1510-45d4-b0c2-00e708abc638" alt="Screenshot 7" width="200"/>
 
 ## Chat Screen
