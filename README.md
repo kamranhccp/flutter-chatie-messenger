@@ -12,6 +12,10 @@ Chatiee is a Flutter-based messaging app that allows users to connect and chat w
 - Notifications: Get notified when you receive new messages.
 - User-friendly interface: Intuitive design for easy navigation and usage.
 
+## Video Record of Chatiee
+
+[![Video Link](https://github.com/kamranhccp/flutter-chatie-messenger/raw/main/assets/50527133/101effdd-ad41-4aac-9f08-648660460ea7.png)](https://github.com/kamranhccp/flutter-chatie-messenger/raw/main/assets/50527133/101effdd-ad41-4aac-9f08-648660460ea7.mp4)
+
 ## Screenshots
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/95042782-97fd-4430-9c51-cb97b0bd0f76" alt="Screenshot 1" width="200"/>
 <img src="https://github.com/kamranhccp/flutter-chatie-messenger/assets/50527133/90b2d8b2-2bb3-4905-a168-435b40d5cc31" alt="Screenshot 2" width="200"/>
