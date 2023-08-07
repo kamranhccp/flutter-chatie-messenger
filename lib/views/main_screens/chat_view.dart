@@ -1,4 +1,5 @@
 import 'package:chatiee/dummy_files/dummy_contacts.dart';
+import 'package:chatiee/views/main_screens/message_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -126,7 +127,7 @@ class _ChatViewState extends State<ChatView> {
                             ),
                           ),
                           Text(
-                            'Name', // Replace with the actual name
+                            dummyContacts[index].name,
                             style: TextStyle(
                               color: const Color(0xFF0F1828),
                               fontFamily: GoogleFonts.mulish().fontFamily,
@@ -180,43 +181,51 @@ class _ChatViewState extends State<ChatView> {
                 return SingleChildScrollView(
                   child: Column(
                     children: [
-                      ListTile(
-                        leading: SizedBox(
-                          width: 55.w,
-                          height: 55.h,
-                          child: Padding(
-                            padding: EdgeInsets.all(2.r),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(16.r),
-                              child: Image.asset(
-                                dummyContacts[index].photo,
-                                fit: BoxFit.cover,
+                      InkWell(
+                        onTap: () {
+                          // Handle chat screen
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MessageView(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border(
+                              bottom: BorderSide(
+                                color: const Color(0xFFE0E0E0),
+                                width: 2.0.r,
                               ),
                             ),
                           ),
-                        ),
-                        title: Text(
-                          dummyMessages[index].senderName,
-                          style: TextStyle(
-                            fontFamily: GoogleFonts.mulish().fontFamily,
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
-                            color: const Color(0xFF0F1828),
-                          ),
-                        ),
-                        subtitle: Text(
-                          dummyMessages[index].message,
-                          style: TextStyle(
-                            fontFamily: GoogleFonts.mulish().fontFamily,
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0xFF828282),
-                          ),
-                        ),
-                        trailing: Column(
-                          children: [
-                            Text(
-                              dummyMessages[index].date,
+                          child: ListTile(
+                            leading: SizedBox(
+                              width: 55.w,
+                              height: 55.h,
+                              child: Padding(
+                                padding: EdgeInsets.all(2.r),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(16.r),
+                                  child: Image.asset(
+                                    dummyContacts[index].photo,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            title: Text(
+                              dummyMessages[index].senderName,
+                              style: TextStyle(
+                                fontFamily: GoogleFonts.mulish().fontFamily,
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w600,
+                                color: const Color(0xFF0F1828),
+                              ),
+                            ),
+                            subtitle: Text(
+                              dummyMessages[index].message,
                               style: TextStyle(
                                 fontFamily: GoogleFonts.mulish().fontFamily,
                                 fontSize: 12.sp,
@@ -224,41 +233,48 @@ class _ChatViewState extends State<ChatView> {
                                 color: const Color(0xFF828282),
                               ),
                             ),
-                            SizedBox(height: 15.h),
-                            dummyMessages[index].unreadMessage
-                                ? Padding(
-                                    padding: EdgeInsets.only(left: 20.w),
-                                    child: Container(
-                                      width: 22.w,
-                                      height: 22.h,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFFD2D5F9),
-                                        borderRadius:
-                                            BorderRadius.circular(10.r),
-                                      ),
-                                      child: Center(
-                                        child: Text(
-                                          '1',
-                                          style: TextStyle(
-                                            fontFamily:
-                                                GoogleFonts.mulish().fontFamily,
-                                            fontSize: 10.sp,
-                                            fontWeight: FontWeight.w600,
-                                            color: const Color(0xFF001A83),
+                            trailing: Column(
+                              children: [
+                                Text(
+                                  dummyMessages[index].date,
+                                  style: TextStyle(
+                                    fontFamily: GoogleFonts.mulish().fontFamily,
+                                    fontSize: 12.sp,
+                                    fontWeight: FontWeight.w400,
+                                    color: const Color(0xFF828282),
+                                  ),
+                                ),
+                                SizedBox(height: 10.h),
+                                dummyMessages[index].unreadMessage
+                                    ? Padding(
+                                        padding: EdgeInsets.only(left: 20.w),
+                                        child: Container(
+                                          width: 22.w,
+                                          height: 22.h,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2D5F9),
+                                            borderRadius:
+                                                BorderRadius.circular(10.r),
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              '1',
+                                              style: TextStyle(
+                                                fontFamily: GoogleFonts.mulish()
+                                                    .fontFamily,
+                                                fontSize: 10.sp,
+                                                fontWeight: FontWeight.w600,
+                                                color: const Color(0xFF001A83),
+                                              ),
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ),
-                                  )
-                                : const SizedBox(),
-                          ],
+                                      )
+                                    : const SizedBox(),
+                              ],
+                            ),
+                          ),
                         ),
-                      ),
-                      const Divider(
-                        color: Color(0xFFE0E0E0),
-                        thickness: 1,
-                        indent: 20,
-                        endIndent: 20,
                       ),
                     ],
                   ),
